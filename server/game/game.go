@@ -4,10 +4,13 @@ import(
 	//"fmt"
 )
 
-type game struct{
-	id int
-	playerNo int
-	playedCards []string
-	votes []int
+type Game struct{
+	Id int
+	Players []Player
+}
+
+type Player struct{
+	Id int
+	Score int
 }
  
